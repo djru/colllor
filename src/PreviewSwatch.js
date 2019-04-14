@@ -88,7 +88,7 @@ function PreviewSwatch(props) {
       onClick={copyToCliboard}
       onTouchEnd={copyToCliboard}
     >
-      {hex_string}
+      <span id="hex">{hex_string}</span>
       <input id="to-copy" readOnly value={hex_string} />
     </div>
   );
