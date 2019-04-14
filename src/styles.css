@@ -1,0 +1,76 @@
+* {
+  user-select: none;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+}
+
+html,
+body {
+  position: fixed;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+html,
+body,
+div,
+canvas {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  height: 0px;
+}
+
+h1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  color: rgba(100, 100, 100, 0.5);
+  font-family: Helvetica, sans-serif;
+  font-weight: 200;
+  user-select: none;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+}
+
+canvas#hls-picker {
+  cursor: crosshair;
+}
+
+canvas#hue-picker {
+  position: relative;
+  top: -4px;
+  cursor: ew-resize;
+}
+
+.color-swatch {
+  position: relative;
+  top: -8px;
+  font-weight: 200;
+  font-size: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+#to-copy {
+  opacity: 0;
+  position: fixed;
+  cursor: pointer;
+  left: -1000;
+  top: -1000;
+  z-index: -1000;
+}
+
+@media only screen and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  h1 {
+    font-size: 1em;
+  }
+}
