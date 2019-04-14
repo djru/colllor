@@ -1,8 +1,8 @@
 * {
-  user-select: none;
+  user-select: none !important;
   -webkit-touch-callout: none !important; /* iOS Safari */
   -webkit-user-select: none !important; /* Safari */
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
 }
 
 html,
