@@ -31,7 +31,15 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Colllor</h1>
+      <h1 style={{
+          top:
+            Math.min(docWidth, window.innerHeight - 300) -
+            (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+              navigator.userAgent
+            )
+              ? 40
+              : 50)
+        }}>Colllor</h1>
       <ColorContext.Provider
         value={{
           hue,
